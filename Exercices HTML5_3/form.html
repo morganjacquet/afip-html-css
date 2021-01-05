@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h3>Champ de saisie avec input text</h3>
+        <input type="text" id="url" name="url" value="http://">
+
+        <h3>Case a cocher</h3>
+        <input type="checkbox" id="case1" name="case1">
+        <label for="case1">case 1</label><br>
+        <input type="checkbox" id="case2" name="case2" checked>
+        <label for="case2">case 2 précoché</label><br>
+        <input type="checkbox" id="case3" name="case3">
+        <label for="case2">case 3</label>
+
+        <h3>Bouton radio</h3>
+        <input type="radio" id="salé" name="drone" value="salé">
+        <label for="salé">salé</label>
+        <input type="radio" id="sucré" name="drone" value="sucré">
+        <label for="sucré">sucré</label>
+        <input type="radio" id="sans saveur" name="drone" value="sans saveur" checked>
+        <label for="sans saveur">sans saveur</label><br>
+
+        <h3>Envoyer un fichier...</h3>
+        <input type="file" id="avatar" name="avatar">
+
+        <h3>Champ de mot de passe</h3>
+        <input type="password" id="password" name="password" value="12345">
+
+        <h3>Champ de saisie long (balise text area)</h3>
+        <textarea id="long" name="long" rows="5" cols="33">C'est l'histoire d'un fou qui repeint son plafond. un autre fou arrive et lui dit : "accroche toi au pinceau, j'enlève l'échelle" </textarea>
+        
+        <h3>Balise select</h3>
+        <p><strong>Format par default</strong></p>
+        <select name="frommage" id="frommage">
+            <option value="">Choisir un formage</option>
+            <option value="beaufort">beaufort</option>
+            <option value="saint-nectaire">saint-nectaire</option>
+            <option value="camembert">camembert</option>
+            <option value="roblochon">roblochon</option>
+        </select><br>
+
+        <p><strong>On raffine un peut...</strong></p>
+        <select name="formage_multi" id="formage_multi" multiple>
+            <option value="">Choisir un formage</option>
+            <option value="beaufort">beaufort</option>
+            <option value="saint-nectaire">saint-nectaire</option>
+            <option value="camembert">camembert</option>
+            <option value="roblochon">roblochon</option>
+        </select><br>
+    </form>
+
+    <form action="" method="post"></form>
+        <h3>Un exemple combinant plusieurs types de champs</h3>
+        <label for="long-comm">Votre addresse email :</label><br>
+        <input type="email" id="mail" name="mail" placeholder="nom@gmail.com"><br><br>
+        <label for="long-comm">Tapez votre commentaire :</label><br>
+        <textarea id="long-comm" name="long-comm" rows="5" cols="33">Votre commentaire... </textarea><br>
+        <input class="send" type="button" value="Envoyé">
+        <input class="close" type="button" value="Close">
+    </form>
+</body>
+</html>
